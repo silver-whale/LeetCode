@@ -36,6 +36,6 @@ public class Longest {
 
     public static void main(String[] args){
         String[] strs = new String[]{"aalit", "lit", "ablitab"};
-        longestCommonPrefix(strs);
+        System.out.println(longestCommonPrefix(strs));
     }
 }
