@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db304f7e-8d38-4822-964c-f51d1fd9210c" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/Leetcode189.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leetcode206.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,18 +53,25 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.rainbow.brackets" />
   </component>
-  <component name="RunManager" selected="Application.strStr">
+  <component name="RunManager" selected="Application.test">
     <configuration name="RemoveDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RemoveDuplicates" />
+      <option name="MAIN_CLASS_NAME" value="Java.RemoveDuplicates" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="strStr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="strStr" />
+      <option name="MAIN_CLASS_NAME" value="Java.strStr" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java.test" />
       <module name="LeetCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -70,6 +79,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.strStr" />
         <item itemvalue="Application.RemoveDuplicates" />
       </list>
@@ -102,7 +112,30 @@
       <workItem from="1651582938905" duration="3256000" />
       <workItem from="1651668328818" duration="407000" />
       <workItem from="1651758115980" duration="515000" />
-      <workItem from="1651910103607" duration="996000" />
+      <workItem from="1651910103607" duration="1196000" />
+      <workItem from="1652795398842" duration="436000" />
+      <workItem from="1652795847612" duration="251000" />
+      <workItem from="1652796111290" duration="2402000" />
+      <workItem from="1652956192633" duration="3736000" />
+      <workItem from="1653049920639" duration="1659000" />
+      <workItem from="1653113576640" duration="646000" />
+      <workItem from="1653116962612" duration="867000" />
+      <workItem from="1653144070083" duration="64000" />
+      <workItem from="1653205834206" duration="601000" />
+      <workItem from="1653224812251" duration="2800000" />
+      <workItem from="1653536204000" duration="1275000" />
+      <workItem from="1653727445784" duration="241000" />
+      <workItem from="1653909174744" duration="7197000" />
+      <workItem from="1654004505810" duration="2032000" />
+      <workItem from="1654163332857" duration="1012000" />
+      <workItem from="1654164360566" duration="62000" />
+      <workItem from="1654164435540" duration="2178000" />
+      <workItem from="1654176725089" duration="1154000" />
+      <workItem from="1654324820950" duration="4652000" />
+      <workItem from="1654427503706" duration="4352000" />
+      <workItem from="1654602774301" duration="2469000" />
+      <workItem from="1654778396469" duration="1221000" />
+      <workItem from="1654779686093" duration="1156000" />
     </task>
     <servers />
   </component>

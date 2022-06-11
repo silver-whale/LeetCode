@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db304f7e-8d38-4822-964c-f51d1fd9210c" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/strStr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Leetcode283.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,9 +52,9 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.strStr">
     <configuration name="RemoveDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RemoveDuplicates" />
       <module name="LeetCode" />
@@ -61,8 +62,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="strStr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="strStr" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.strStr" />
         <item itemvalue="Application.RemoveDuplicates" />
       </list>
     </recent_temporary>
@@ -81,7 +90,25 @@
       <workItem from="1649336883643" duration="5788000" />
       <workItem from="1649504501310" duration="2015000" />
       <workItem from="1649651191299" duration="390000" />
-      <workItem from="1649850906611" duration="490000" />
+      <workItem from="1649850906611" duration="578000" />
+      <workItem from="1649903821038" duration="394000" />
+      <workItem from="1650111219926" duration="1000000" />
+      <workItem from="1650203296357" duration="3048000" />
+      <workItem from="1650376410005" duration="52000" />
+      <workItem from="1650794700433" duration="2740000" />
+      <workItem from="1650896874151" duration="142000" />
+      <workItem from="1650975723729" duration="115000" />
+      <workItem from="1651227611256" duration="256000" />
+      <workItem from="1651302697639" duration="2264000" />
+      <workItem from="1651582938905" duration="3256000" />
+      <workItem from="1651668328818" duration="407000" />
+      <workItem from="1651758115980" duration="515000" />
+      <workItem from="1651910103607" duration="1196000" />
+      <workItem from="1652795398842" duration="436000" />
+      <workItem from="1652795847612" duration="251000" />
+      <workItem from="1652796111290" duration="2402000" />
+      <workItem from="1652956192633" duration="3736000" />
+      <workItem from="1653049920639" duration="721000" />
     </task>
     <servers />
   </component>
