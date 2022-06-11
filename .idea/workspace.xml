@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db304f7e-8d38-4822-964c-f51d1fd9210c" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/Leetcode206.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test.java" afterDir="false" />
-    </list>
+    <list default="true" id="db304f7e-8d38-4822-964c-f51d1fd9210c" name="Changes" comment="Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +49,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.rainbow.brackets" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Python" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.test">
     <configuration name="RemoveDuplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -136,6 +136,7 @@
       <workItem from="1654602774301" duration="2469000" />
       <workItem from="1654778396469" duration="1221000" />
       <workItem from="1654779686093" duration="1156000" />
+      <workItem from="1654944727250" duration="522000" />
     </task>
     <servers />
   </component>
