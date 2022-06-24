@@ -1,6 +1,6 @@
 # input : n, connections : [시작노드, 끝노드]
 
-class Java.Solution:
+class Solution:
     # List[List[int]] : int형의 2차원 배열
     def minReorder(self, n:int, connections:List[List[int]]) -> int:
         edges = { (a,b) for a, b in connections}
