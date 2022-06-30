@@ -1,5 +1,3 @@
-from collections import Counter
-
 class Leetcode567:
     def checkInclusion(self, s1: str, s2: str) -> bool:
         if not s1 or not s2: return False
