@@ -1,12 +1,12 @@
 class Leetcode784:
-    def letterCasePermutation(self, s: str) -> List[str]:
-        result = ['']
+    def letterCasePermutation(self, s: str):
+        answer = ['']
 
         for c in s:
             if c.isalpha():
-                result = [prev + j 
-                        for prev in result
-                        for j in [c.upper(), c.lower()]]
+                answer = [ans+new for ans in answer for new in [c.upper(), c.lower()]]
             else:
-                result = [prev + c for prev in result]
-        return result
+                answer = [ans+c for ans in answer]
+
+        return answer
+
