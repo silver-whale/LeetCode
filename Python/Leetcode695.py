@@ -1,3 +1,5 @@
+# 재귀 = 탈출조건
+
 class Leetcode695:
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
         m, n = len(grid), len(grid[0])
@@ -17,11 +19,12 @@ class Leetcode695:
                 answer += dfs(r+dx[i], c+dy[i])
             return answer
 
-        answer = 0
+        # 모든 열에서 시행해야 함, 한 덩어리가 끝날 때마다 answer는 업데이트됨
+        result = 0
         for r in range(m):
             for c in range(n):
-                answer = max(answer, dfs(r,c))
-        return answer
+                result = max(result, dfs(r,c))
+        return result
 
         def bfs(r, c):
             # queue에 삽입 후 0으로 바꿈
