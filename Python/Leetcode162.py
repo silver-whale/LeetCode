@@ -1,6 +1,5 @@
 class Leetcode162:
     def findPeakElement(self, nums: List[int]) -> int:
-        if len(nums)==1: return 0
         start, end = 0, len(nums)-1
 
         while start<end:
@@ -11,5 +10,6 @@ class Leetcode162:
                 start = mid + 1
             # 감소하는 부분 -> 왼쪽에 피크가 있음 
             # mid가 최댓값일 수 있음
+            else:
                 end = mid
         return start
