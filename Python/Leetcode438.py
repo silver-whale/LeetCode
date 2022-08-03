@@ -15,12 +15,14 @@ class Leetcode438:
         if dic1 == dic2:
             result.append(0)
 
+        # Sliding window
         for i in range(1, len(s) - len(p) + 1):
-            # 기존에 저장된 값 삭제
+            # 맨 앞의 값 삭제
             dic2[ord(s[i-1]) - ord('a')] -= 1
-            # 새로운 값 저장
+            # 맨 뒤의 값 추가
             dic2[ord(s[i+len(p)-1]) - ord('a')] += 1
             if dic1 == dic2:
                 result.append(i)
         
         return result
+        
