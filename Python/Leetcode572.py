@@ -1,5 +1,6 @@
 class Leetcode572:
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+        # 값 비교
         def isSame(root, subRoot):
             # 둘 다 값이 없다
             if not root and not subRoot: return True
@@ -7,6 +8,7 @@ class Leetcode572:
             elif not root or not subRoot: return False
             return root.val==subRoot.val and isSame(root.left, subRoot.left) and isSame(root.right, subRoot.right)
 
+        # 전체 트리 비교
         def traverse(root, subRoot):
             if not root and not subRoot: return True
             elif not root or not subRoot: return False
