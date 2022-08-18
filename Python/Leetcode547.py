@@ -6,7 +6,6 @@ class Leetcode547:
                 if isConnected[i][j]==1 and visited[j]==0:
                     dfs(j)
 
-
         n = len(isConnected)
         result = 0
         # number of nodes
