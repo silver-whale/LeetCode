@@ -1,4 +1,5 @@
 class Leetcode5:
+    # 시작지점을 다르게 하며 offset을 유동적으로 조절
     def longestPalindrome(self, string):
         """
         Substring(start, end) is a palindrom if Substring(start+1, end-1) is a palindrom and string[start] == string[end]
@@ -33,7 +34,8 @@ class Leetcode5:
 
         return string[start:start+offset]
    
-    
+
+# 시작지점별로 offset을 다르게 하며 substring을 확인
 def longestPalindrome2(string):
     """
     Substring(start, end) is a palindrom if Substring(start+1, end-1) is a palindrom and string[start] == string[end]
