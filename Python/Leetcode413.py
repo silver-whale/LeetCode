@@ -1,3 +1,6 @@
+from audioop import add
+
+
 class Leetcode413:
     def numberOfArithmeticSlices(self, nums):
         N = len(nums)
@@ -6,9 +9,19 @@ class Leetcode413:
 
         dp = [0] * (N+1)
 
+        # 원소 하나가 더해질 때마다 늘어나는 subarray의 수
+        # ex) 원소 개수 3개일 때는 1개, 원소 개수 4개일 때는 2+1개, 원소 개수 5개일 때는 3+2+1개의 subarray를 가짐
+        addNum = 1
+
         for i in range(2, N):
             if nums[i] - nums[i-1] == nums[i-1]-nums[i-2]:
-                opt[i] = opt[i-1] + 1
+                dp[i] = dp[i-1] + addNum
+                addNum += 1
+            else:
+                dp[i] = dp[i-1]
+                addNum = 1
+        
+        return dp[N-1]
 
 
     def slidingwindow(self, nums):
