@@ -1,3 +1,3 @@
 # LeetCode
-* Solutions for leetCode problems
+* Solutions for eetCode problems
 
