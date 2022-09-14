@@ -17,6 +17,7 @@ class Leetcode673:
             # 가장 긴 배열이 몇 개인지를 찾는다
             for j in range(i):
                 if dp[j][0] == curr_longest-1 and nums[i]>nums[j]:
+                    # 기존에 있던 배열들에서 하나만 추가된 거니까 개수는 같음
                     count += dp[j][1]
                     
             # 현재까지 가장 긴 길이와 그 개수를 저장한다        
