@@ -9,6 +9,7 @@ class Leetcode1143:
         # dp[i+1][j+1] -> text[i] is text[:i+1]'s last word
         for i in range(N):
             for j in range(M):
+                # 만약 맨 끝이 같으면 이전 거 + 한 글자
                 if text1[i] == text2[j]:
                     dp[i+1][j+1] = dp[i][j]+1
                 else:
