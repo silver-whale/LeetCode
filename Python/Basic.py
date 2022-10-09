@@ -36,3 +36,34 @@ class solution:
                 if i != n//i:   
                     answer += n//i
         return answer
+
+    def q6(n):
+        answer = 0
+
+        while n>0:
+            answer += n%10
+            n //= 10
+        return answer
+
+    def q7(n):
+        if math.sqrt(n) == int(math.sqrt(n)) : return ((math.sqrt(n)+1)**2)
+        else: return -1
+
+    def q8(n):
+        answer = []
+        
+        while n>0:
+            answer.append(n%10)
+            n//=10
+            
+        return answer
+    
+    def q9(s):
+        answer = True
+            
+        P = s.count('p') + s.count('P')
+        Y = s.count('y') + s.count('Y')
+        
+        if P==0 and Y==0: return True
+        elif P==Y: return True
+        else: return False
