@@ -25,3 +25,14 @@ class solution:
     def q4(n):
         if math.sqrt(n) == int(math.sqrt(n)): return 1
         else: return 2
+
+    def q5(n):
+        if n==0: return 0
+        answer = 0
+        sqN = int(math.sqrt(n))
+        for i in range(1, sqN+1):
+            if n%i == 0:
+                answer += i
+                if i != n//i:   
+                    answer += n//i
+        return answer
