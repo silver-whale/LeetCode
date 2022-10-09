@@ -124,3 +124,18 @@ class solution:
             answer += i
         
         return answer
+
+    def q16(phone_number):
+        for i in range(0, len(phone_number)-4):
+            phone_number = phone_number[:i] + '*' + phone_number[i+1:]
+        return phone_number
+
+    def q17(arr, divisor):
+        answer = []
+        
+        for a in arr:
+            if a%divisor == 0:
+                answer.append(a)
+        if answer:
+            return sorted(answer)
+        else: return [-1]
