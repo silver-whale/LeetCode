@@ -253,3 +253,14 @@ class solution:
         lm = n*m // gc
         
         return [gc, lm]
+
+    def q32(A,B):
+        sA = sorted(A)
+        sB = sorted(B, reverse=True)
+        
+        answer = 0
+        
+        for i in range(len(sA)):
+            answer += sA[i]*sB[i]
+        
+        return answer
