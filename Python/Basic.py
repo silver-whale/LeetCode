@@ -139,3 +139,45 @@ class solution:
         if answer:
             return sorted(answer)
         else: return [-1]
+
+    def q18(arr):
+        arr.remove(min(arr))
+        if not arr: return [-1]
+        else: return arr
+
+    def q19(absolutes, signs):
+        answer = 0
+        for i in range(len(signs)):
+            if signs[i]:
+                answer += absolutes[i]
+            else:
+                answer -= absolutes[i]
+                
+        return answer
+
+    def q20(numbers):
+        answer = 0
+        for i in range(10):
+            if i not in numbers:
+                answer += i
+        return answer
+
+    def q21(n):
+        if n%2 == 0:
+            return "수박"*(n//2)
+        else:
+            return "수박"*(n//2) + "수"
+
+    def q22(s):
+        length = len(s)
+        
+        if length%2==0:
+            return s[length//2-1] + s[(length//2)]
+        else:
+            return s[length//2]
+
+    def q23(a, b):
+        answer = 0
+        for i in range(len(a)):
+            answer += a[i] * b[i]
+        return answer
