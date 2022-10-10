@@ -210,3 +210,46 @@ class solution:
                 answer -= num
             
         return answer
+
+    def q28(s):
+        answer = list(s)
+        
+        if answer[0].isalpha():
+            answer[0] = answer[0].upper()
+            
+        for i in range(1, len(answer)):
+            if answer[i-1] == " " and answer[i].isalpha():
+                answer[i] = answer[i].upper()
+            elif answer[i].isalpha():
+                answer[i] = answer[i].lower()
+        
+        return "".join(answer)
+
+    def q29(arr1, arr2):
+        m, n = len(arr1), len(arr1[0])
+        answer = [[0 for i in range(n)] for j in range(m)]
+
+        for i in range(m):
+            for j in range(n):
+                answer[i][j] = arr1[i][j] + arr2[i][j]
+            
+        return answer
+
+    def q30(price, money, count):
+        total = count*((2*price)+(count-1)*price)//2
+        
+        if money>=total: return 0
+        else: return total-money
+
+    def q31(n, m):
+        def gcd(a, b):
+            while (b>0):
+                a, b = b, a%b
+            return a
+
+        gc = gcd(max(n, m), min(n, m))
+        
+        # x*y를 최대공약수로 나눈 것이 최소공배수가 됨
+        lm = n*m // gc
+        
+        return [gc, lm]
