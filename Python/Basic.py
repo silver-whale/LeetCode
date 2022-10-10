@@ -181,3 +181,32 @@ class solution:
         for i in range(len(a)):
             answer += a[i] * b[i]
         return answer
+
+    def q24(s):
+        return ''.join(sorted(s,reverse=True))
+
+    def q25(s):
+        nums = [int(i) for i in s.split(' ')]
+        return str(min(nums))  + " " + str(max(nums))
+
+    def q26(s):
+        if len(s) != 4 and len(s) !=6: return False
+        for c in s:
+            if c.isalpha(): return False
+        return True
+
+    def q27(left, right):
+        answer = 0
+        for num in range(left, right+1):
+            count = 0
+            sqNum = int(math.sqrt(num))
+            for i in range(1, sqNum+1):
+                if num%i == 0:
+                    if i != num//i: count += 2
+                    else: count += 1
+            if count%2 == 0:
+                answer += num
+            else:
+                answer -= num
+            
+        return answer
