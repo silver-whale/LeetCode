@@ -264,3 +264,36 @@ class solution:
             answer += sA[i]*sB[i]
         
         return answer
+
+    def q33(x):
+        count = 0
+        zeros = 0
+        
+        while True:
+            if x == "1": break
+            
+            zeros += x.count("0")
+            x = x.replace("0", "")
+            
+            # 앞에 0b가 붙어서 떼줘야 함
+            x = bin(len(x))[2:]
+            
+            count += 1
+        
+        return [count, zeros]
+
+    def q34(s):
+        open = 0
+        
+        if s[0] == ')': return False
+
+        for c in s:
+            if open < 0: return False
+        
+            if c=='(':
+                open += 1
+            else:
+                open -= 1
+        
+        if open != 0: return False
+        else: return True
