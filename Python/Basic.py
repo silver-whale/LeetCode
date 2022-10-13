@@ -297,3 +297,28 @@ class solution:
         
         if open != 0: return False
         else: return True
+
+    def q35(arr):
+        last = -1
+        answer = []
+        for a in arr:
+            if last != a:
+                answer.append(a)
+                last = a
+
+        return answer
+
+    def q36(n):
+        # 연속된 자연수라 FOR문
+        answer = 1
+        for i in range(1, n//2+1):
+            num = 0
+            # 차례로 올려가며 더함
+            for j in range(i, n+1):
+                num += j
+                if num == n:
+                    answer += 1
+                    break
+                if num>n:
+                    break
+        return answer
