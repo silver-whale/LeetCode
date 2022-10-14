@@ -322,3 +322,44 @@ class solution:
                 if num>n:
                     break
         return answer
+
+    def q37(s):
+        answer = []
+        words =  s.split(" ")
+        
+        for word in words:
+            temp = ""
+            for w in range(len(word)):
+                if w%2 == 0:
+                    temp += word[w].upper()
+                else:
+                    temp += word[w].lower()
+            answer.append(temp)
+        
+        return " ".join(answer)
+
+
+    def q38(n):
+        answer = 0
+        
+        # 3진법 변환
+        tri = ""
+        while n>0:
+            n, m = divmod(n, 3)
+            tri += str(m)
+        # 원래는 [::-1] 해줘야 하지만 앞뒤로 뒤집는 과정 때문에 삭제
+        
+        for i in range(len(tri)):
+            answer += int(tri[i]) * (3**(len(tri)-i-1))
+        
+        return answer
+
+    def q39(n):
+        # fib[0] = 0, fib[1] = 1
+        fib = [i for i in range(n+1)]
+        
+        for i in range(2, n+1):
+            fib[i] = fib[i-1] + fib[i-2]
+
+        return fib[n]%1234567
+        
