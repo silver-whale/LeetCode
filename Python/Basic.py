@@ -486,3 +486,33 @@ class solution:
             result = result.replace(n[1], n[0])
         
         return int(result)
+
+    def q51(people, limit):
+        numPeople = len(people)
+        sPeople = sorted(people)
+        
+        rescued = 0
+        boat = 0
+        
+        firstIndex = 0
+        lastIndex = len(sPeople)-1
+        
+        while rescued < numPeople:
+
+            if firstIndex == lastIndex:
+                rescued += 1
+                boat += 1
+                return boat
+            while sPeople[lastIndex] > limit - sPeople[firstIndex]:
+                rescued += 1
+                boat += 1
+                lastIndex -= 1
+                if firstIndex >= lastIndex: 
+                    return boat + 1
+            firstIndex += 1
+            lastIndex -= 1
+            rescued += 2
+            boat += 1
+        return boat
+            
+    
