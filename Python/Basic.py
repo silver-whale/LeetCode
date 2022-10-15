@@ -467,3 +467,22 @@ class solution:
             answer.append(sorted(array[i:j])[k])
         
         return answer
+
+    def q50(s):
+        result = s
+        numbers = [("0", "zero"), 
+                ("1", "one"), 
+                ("2", "two"),
+                ("3", "three"),
+                ("4", "four"),
+                ("5", "five"),
+                ("6", "six"),
+                ("7", "seven"),
+                ("8", "eight"),
+                ("9", "nine")]
+        
+        for n in numbers:
+            print(n[0], n[1])
+            result = result.replace(n[1], n[0])
+        
+        return int(result)
