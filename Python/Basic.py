@@ -363,3 +363,107 @@ class solution:
 
         return fib[n]%1234567
         
+    def q40(d, budget):
+        d = sorted(d)
+        while budget<sum(d):
+            d.pop()
+        return len(d)
+
+    def q41(n):
+        ones = bin(n).count('1')
+        while True:
+            n += 1
+            if bin(n).count('1') == ones: return n
+
+    def q42(s, n):
+        answer = ""
+        for c in s:
+            if c == " ":
+                answer += " "
+            else:
+                res = ord(c) + n
+                if ord(c) <= 90:
+                    print("C is upper")
+                    if res > ord('Z'):
+                        answer += chr(ord('A') + res - ord('Z') - 1)
+                    else:
+                        answer += chr(res)
+                else:
+                    print("C is lower")
+                    if res > ord('z'):
+                        answer += chr(ord('a') + res - ord('z') - 1)
+                    else:
+                        answer += chr(res)    
+        return answer
+
+    def q43(n, arr1, arr2):
+        answer = []
+        for i in range(len(arr1)):
+            a, b = bin(arr1[i])[2:].zfill(n), bin(arr2[i])[2:].zfill(n)
+            line = ""
+            for j in range(n):
+                if a[j] == '1' or b[j] == '1':
+                    line += '#'
+                else:
+                    line += ' '
+            answer.append(line)
+        return answer
+
+
+    def q44(brown, yellow):
+        nAddm = (brown+4)//2
+        
+        for n in range(nAddm//2+1):
+            m = nAddm - n
+            if n*m - brown == yellow:
+                return [m, n]
+
+    def q45(sizes):
+        rows, cols = [], []
+        for s in sizes:
+            rows.append(max(s))
+            cols.append(min(s))
+        return max(rows)*max(cols)
+
+    def q46(n, words):
+        count = [0 for i in range(n)]
+        
+        last = ' '
+        
+        for w in range(len(words)):
+            count[w%n] += 1
+
+            if len(words[w]) == 1: return [w%n+1, count[w%n]]
+            
+            if w != 0:
+                if words[w] in words[:w]:
+                    return [w%n+1, count[w%n]]
+                if words[w][0] != last:
+                    return [w%n+1, count[w%n]]
+            last = words[w][-1]
+            
+        return [0, 0]
+
+    def q47(s):
+        result = [s[0]]
+        
+        for i in range(1, len(s)):
+            if result and s[i] == result[-1]:
+                result.pop()
+            else: result.append(s[i])
+
+        if result: return 0
+        else: return 1
+
+    def q48(strings, n):
+        # N번째 문자열이 같으면 그냥 단어 전체를 비교
+        return sorted(strings, key = lambda x: (x[n], x))
+
+    def q49(array, commands):
+
+        answer = []
+        for i in range(len(commands)):
+            i, j, k = commands[i][0]-1, commands[i][1], commands[i][2]-1
+            answer.append(sorted(array[i:j])[k])
+        
+        return answer
