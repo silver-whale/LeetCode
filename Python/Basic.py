@@ -514,5 +514,49 @@ class solution:
             rescued += 2
             boat += 1
         return boat
+
+    def q52(arr):
+        def gcd(a, b):
+            a, b = max(a,b), min(a,b)
+            while (b>0):    
+                a, b = b, a%b
+            return a
+        
+        if len(arr) == 1:
+            return arr[0]
+        if len(arr) == 2:
+            return  arr[0]*arr[1] // gcd(arr[0], arr[1])
+        
+        first, second = arr[0], arr[1]
+        great = 0
+        
+        i = 1
+        
+        while i<len(arr)-1:
+            great = gcd(first, second)
+            first = first*second // great
+            i += 1
+            second = arr[i]
+        
+        great = gcd(first, second)
+        
+        return first*second // great
+
+    def q53(numbers):
+        answer = []
+        for i in range(len(numbers)):
+            for j in range(i+1, len(numbers)):
+                if numbers[i]+numbers[j] not in answer:
+                    answer.append(numbers[i]+numbers[j])
+        
+        return sorted(answer)
+
+    def q54(number):
+        answer = 0
+        for i in range(len(number)):
+            for j in range(i+1, len(number)):
+                if -number[i]-number[j] in number[j+1:]:
+                    answer += number[j+1:].count(-number[i]-number[j])
+        return answer
             
     
