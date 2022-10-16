@@ -558,5 +558,35 @@ class solution:
                 if -number[i]-number[j] in number[j+1:]:
                     answer += number[j+1:].count(-number[i]-number[j])
         return answer
+
+    def q55(n,a,b):
+        count = 0
+        
+        while a != b:
+            if a % 2 == 1:
+                a = a//2 + 1
+            else:
+                a = a//2
+                
+            if b % 2 == 1:
+                b = b//2 + 1
+            else:
+                b = b//2
+                
+            count += 1
+
+    def q56(n):
+        if n==1: return 1
+        if n==2: return 2
+
+        # DP or Fibo
+        dp = [1 for i in range(n+1)]
+        dp[1] = 1
+        dp[2] = 2
+
+        for i in range(3, n+1):
+            dp[i] = dp[i-2] + dp[i-1]
+        
+        return dp[n]%1234567
             
     
